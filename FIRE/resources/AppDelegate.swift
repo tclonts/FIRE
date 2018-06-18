@@ -17,6 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+//        UILabel.appearance().font = UIFont(name: "SFCompactText-Regular", size: 17.0)
+//        let fontRegular = UIFont(name: "SFCompactText-Regular", size: 17.0)
+//        UILabel.appearance(whenContainedInInstancesOf: [UIButton.self]).font = fontRegular
+//        UILabel.appearance(whenContainedInInstancesOf: [UITextView.self]).font = fontRegular
+
         return true
     }
 

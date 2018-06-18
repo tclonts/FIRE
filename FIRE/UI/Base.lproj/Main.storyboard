@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XHb-pc-dqS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFCompactText-Regular.otf">
+            <string>SFCompactText-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Welcome-->
+        <scene sceneID="6gQ-c6-BOH">
+            <objects>
+                <viewController id="Cqo-Bl-O8i" customClass="WelcomeViewController" customModule="FIRE" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q0o-Iw-PWD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to F.I.R.E calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYh-4y-xiW">
+                                <rect key="frame" x="77" y="167" width="225" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sT0-Z8-ZJv">
+                                <rect key="frame" x="143" y="483" width="90" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                <state key="normal" title="Get Started"/>
+                                <connections>
+                                    <segue destination="72Z-A2-Q4L" kind="show" id="bgq-VP-cBn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome will you become finacially independent?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ww-HN-YxY">
+                                <rect key="frame" x="0.0" y="222" width="375" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="FEM-Wr-ugE"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome" id="qaF-8R-2Gc"/>
+                    <connections>
+                        <outlet property="getStartedButton" destination="sT0-Z8-ZJv" id="7Kl-as-Lul"/>
+                        <outlet property="informationLabel" destination="1ww-HN-YxY" id="bko-za-a78"/>
+                        <outlet property="welcomeLabel" destination="RYh-4y-xiW" id="nRw-3p-nzx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AZ4-g7-jQ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="919.20000000000005" y="105.69715142428787"/>
+        </scene>
+        <!--Information-->
+        <scene sceneID="jVa-Pd-ZNr">
+            <objects>
+                <viewController id="72Z-A2-Q4L" customClass="InformationViewController" customModule="FIRE" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="st6-oT-kda">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4Z5-AX-7hN">
+                                <rect key="frame" x="67" y="87" width="240" height="446"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4EL-5G-4Fo" customClass="Terms">
+                                <rect key="frame" x="151" y="577" width="72" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                <state key="normal" title="Continue"/>
+                                <connections>
+                                    <segue destination="IS0-da-fSY" kind="show" id="56d-6T-XjB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="J1g-m0-3Yj"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Information" id="OUx-i2-TzJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DL2-6L-hqD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1751.2" y="105.69715142428787"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sCh-7Z-JG5">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QFI-ia-qVK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="IS0-da-fSY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1zg-5b-AHH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pM4-yY-wVw">
+                                <rect key="frame" x="161" y="559" width="55" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                <state key="normal" title="Accept"/>
+                                <connections>
+                                    <segue destination="XST-jC-8UZ" kind="show" id="wTT-ng-HSm"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zpi-k9-1En">
+                                <rect key="frame" x="67" y="85" width="240" height="447"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="DJJ-gr-On2"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2586" y="106"/>
+        </scene>
+        <!--About Your Finances View Controller-->
+        <scene sceneID="Ext-1o-7Zt">
+            <objects>
+                <viewController id="XST-jC-8UZ" customClass="AboutYourFinancesViewController" customModule="FIRE" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wNj-c7-ffM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SNz-wf-ZDa">
+                                <rect key="frame" x="37" y="176.5" width="300" height="378"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aPc-wG-z9C">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="0gG-OY-J7Y"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$ Annual Income" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="11z-jw-u96">
+                                        <rect key="frame" x="0.0" y="38" width="300" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="ORK-AJ-5Gl"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$ Annual Savings Rate %" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ifw-qB-f0J">
+                                        <rect key="frame" x="0.0" y="76" width="300" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="sso-cn-WeE"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$ Yearly Expenses" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b8m-9W-OZs">
+                                        <rect key="frame" x="0.0" y="114" width="300" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="sme-N1-lPS"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$ Total Savings" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ar5-8Z-jsM">
+                                        <rect key="frame" x="0.0" y="152" width="300" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="EdK-yo-T7f"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Intial Withdrawal(WD) Rate" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j4p-Qa-SqH">
+                                        <rect key="frame" x="0.0" y="190" width="300" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="OaP-rG-8Ta"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Infaltion Rate Assumption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v19-dQ-k2Z">
+                                        <rect key="frame" x="0.0" y="228" width="300" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="xrB-ME-ail"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Investment Return Assumption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Syw-f9-NGu">
+                                        <rect key="frame" x="0.0" y="266" width="300" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="u40-zR-7g0"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMv-oN-YJo">
+                                        <rect key="frame" x="0.0" y="304" width="300" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="ZGO-eQ-0jC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                        <state key="normal" title="Calculate"/>
+                                        <connections>
+                                            <action selector="calculateButtonTapped:" destination="XST-jC-8UZ" eventType="touchUpInside" id="LNQ-BV-EGI"/>
+                                            <segue destination="XGn-yM-r7e" kind="show" identifier="toResultsVC" id="jq8-yU-pmb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98d-11-bkG">
+                                        <rect key="frame" x="0.0" y="345" width="300" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="9qk-1w-2Q9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                        <state key="normal" title="Advanced Options"/>
+                                        <connections>
+                                            <action selector="advancedOptionsButtonTapped:" destination="XST-jC-8UZ" eventType="touchUpInside" id="p69-P7-UPq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="v19-dQ-k2Z" firstAttribute="width" secondItem="SNz-wf-ZDa" secondAttribute="width" id="1oH-8M-Xm1"/>
+                                    <constraint firstItem="11z-jw-u96" firstAttribute="width" secondItem="SNz-wf-ZDa" secondAttribute="width" id="8fE-gD-79h"/>
+                                    <constraint firstItem="Ar5-8Z-jsM" firstAttribute="width" secondItem="SNz-wf-ZDa" secondAttribute="width" id="Ab4-sI-ubV"/>
+                                    <constraint firstItem="j4p-Qa-SqH" firstAttribute="width" secondItem="SNz-wf-ZDa" secondAttribute="width" id="BlX-8M-bYA"/>
+                                    <constraint firstItem="Ifw-qB-f0J" firstAttribute="width" secondItem="SNz-wf-ZDa" secondAttribute="width" id="HNo-xp-Rga"/>
+                                    <constraint firstAttribute="width" constant="300" id="W3O-br-9ub"/>
+                                    <constraint firstItem="Syw-f9-NGu" firstAttribute="width" secondItem="SNz-wf-ZDa" secondAttribute="width" id="WA3-Qa-9Zv"/>
+                                    <constraint firstItem="b8m-9W-OZs" firstAttribute="width" secondItem="SNz-wf-ZDa" secondAttribute="width" id="acg-0r-ugn"/>
+                                    <constraint firstItem="UMv-oN-YJo" firstAttribute="width" secondItem="SNz-wf-ZDa" secondAttribute="width" id="eys-Am-9VY"/>
+                                    <constraint firstItem="98d-11-bkG" firstAttribute="width" secondItem="SNz-wf-ZDa" secondAttribute="width" id="ni0-tm-mVK"/>
+                                    <constraint firstItem="aPc-wG-z9C" firstAttribute="width" secondItem="SNz-wf-ZDa" secondAttribute="width" id="yzd-3m-E9E"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Your Finances" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zl-8Q-bA3">
+                                <rect key="frame" x="93" y="123" width="188" height="24"/>
+                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5zl-8Q-bA3" firstAttribute="top" secondItem="dhu-Wj-KyS" secondAttribute="top" constant="59" id="6tK-gu-iIc"/>
+                            <constraint firstItem="SNz-wf-ZDa" firstAttribute="centerX" secondItem="dhu-Wj-KyS" secondAttribute="centerX" id="EEM-TR-x0s"/>
+                            <constraint firstItem="5zl-8Q-bA3" firstAttribute="leading" secondItem="dhu-Wj-KyS" secondAttribute="leading" constant="93" id="FAu-Sf-ftv"/>
+                            <constraint firstItem="SNz-wf-ZDa" firstAttribute="top" secondItem="5zl-8Q-bA3" secondAttribute="bottom" constant="29.5" id="KUC-GR-b9W"/>
+                            <constraint firstItem="dhu-Wj-KyS" firstAttribute="trailing" secondItem="5zl-8Q-bA3" secondAttribute="trailing" constant="94" id="iWR-6S-Ubn"/>
+                            <constraint firstItem="SNz-wf-ZDa" firstAttribute="centerY" secondItem="dhu-Wj-KyS" secondAttribute="centerY" id="rrY-Wf-Tgc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dhu-Wj-KyS"/>
+                    </view>
+                    <connections>
+                        <outlet property="ageTextField" destination="aPc-wG-z9C" id="o8Q-Jj-1mw"/>
+                        <outlet property="annualIncomeTextField" destination="11z-jw-u96" id="Fzk-dF-meA"/>
+                        <outlet property="annualSavingsRateTextField" destination="Ifw-qB-f0J" id="2gv-ug-nil"/>
+                        <outlet property="inflationRateTextField" destination="v19-dQ-k2Z" id="gb1-LY-EMM"/>
+                        <outlet property="investmentReturnTextField" destination="Syw-f9-NGu" id="pIX-iC-9Wf"/>
+                        <outlet property="totalSavingsTextField" destination="Ar5-8Z-jsM" id="PA3-Xq-lUk"/>
+                        <outlet property="withdrawalRateTextField" destination="j4p-Qa-SqH" id="tmE-Bs-Cd4"/>
+                        <outlet property="yearlyExpensesTextField" destination="b8m-9W-OZs" id="UBJ-fq-hYD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ikU-fm-JGn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3452" y="106"/>
+        </scene>
+        <!--Results View Controller-->
+        <scene sceneID="RbI-t7-0pu">
+            <objects>
+                <viewController id="XGn-yM-r7e" customClass="ResultsViewController" customModule="FIRE" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dRp-RT-HMp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XuS-Vw-jC7">
+                                <rect key="frame" x="0.0" y="74" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3a4-8a-smM">
+                                <rect key="frame" x="37" y="230" width="300" height="271"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3a4-8a-smM" firstAttribute="centerX" secondItem="MXO-su-CRh" secondAttribute="centerX" id="AS8-on-mCi"/>
+                            <constraint firstItem="3a4-8a-smM" firstAttribute="centerY" secondItem="MXO-su-CRh" secondAttribute="centerY" id="FNa-bg-oZL"/>
+                            <constraint firstItem="3a4-8a-smM" firstAttribute="leading" secondItem="MXO-su-CRh" secondAttribute="leading" constant="37" id="bST-Vy-aw0"/>
+                            <constraint firstItem="3a4-8a-smM" firstAttribute="top" secondItem="MXO-su-CRh" secondAttribute="top" constant="166" id="g4G-nD-3Sd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MXO-su-CRh"/>
+                    </view>
+                    <connections>
+                        <outlet property="resultsTextView" destination="3a4-8a-smM" id="0py-Gx-G8e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ARr-6r-Ehe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4284" y="105.69715142428787"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pcQ-HC-008">
+            <objects>
+                <viewController id="39x-BV-fFp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9NB-uO-7HD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWd-YS-hOy">
+                                <rect key="frame" x="161" y="277" width="37" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                <state key="normal" title="Next"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="How does this make you feel?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="E3S-sA-fjp">
+                                <rect key="frame" x="67" y="63" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qyZ-g3-PGU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OM9-SH-aEo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5167" y="112"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qkm-xG-IrP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XHb-pc-dqS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kCh-d0-xu0">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Cqo-Bl-O8i" kind="relationship" relationship="rootViewController" id="b4O-nc-Pa0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="888-jY-VhB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20" y="105.69715142428787"/>
+        </scene>
+    </scenes>
+</document>

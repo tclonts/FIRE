@@ -12,6 +12,11 @@
 		BE0FA77B20B6734200DBC191 /* FIRE.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE0FA77920B6734200DBC191 /* FIRE.xcdatamodeld */; };
 		BE0FA77D20B6734600DBC191 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE0FA77C20B6734600DBC191 /* Assets.xcassets */; };
 		BE0FA78020B6734600DBC191 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0FA77E20B6734600DBC191 /* LaunchScreen.storyboard */; };
+		BECA3EA220B894CA003A6E20 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA3EA120B894CA003A6E20 /* WelcomeViewController.swift */; };
+		BECEAEB520CEEBAD00C8EF21 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECEAEB420CEEBAC00C8EF21 /* InformationViewController.swift */; };
+		BECEAEBB20CEEC0800C8EF21 /* AboutYourFinancesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECEAEBA20CEEC0800C8EF21 /* AboutYourFinancesViewController.swift */; };
+		BECEAEBD20CF7C1E00C8EF21 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECEAEBC20CF7C1E00C8EF21 /* ResultsViewController.swift */; };
+		BECEAEC120CF936B00C8EF21 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = BECEAEC020CF936B00C8EF21 /* fire.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,23 @@
 		BE0FA77C20B6734600DBC191 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE0FA77F20B6734600DBC191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE0FA78120B6734700DBC191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BECA3EA120B894CA003A6E20 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		BECA3EA520B89565003A6E20 /* SFCompactText-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-BoldItalic.otf"; sourceTree = "<group>"; };
+		BECA3EA620B89566003A6E20 /* SFCompactText-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-Light.otf"; sourceTree = "<group>"; };
+		BECA3EA720B89568003A6E20 /* SFCompactText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-Regular.otf"; sourceTree = "<group>"; };
+		BECA3EA820B89569003A6E20 /* SFCompactText-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-Heavy.otf"; sourceTree = "<group>"; };
+		BECA3EA920B8956A003A6E20 /* SFCompactText-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-MediumItalic.otf"; sourceTree = "<group>"; };
+		BECA3EAA20B8956C003A6E20 /* SFCompactText-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-Medium.otf"; sourceTree = "<group>"; };
+		BECA3EAB20B8956D003A6E20 /* SFCompactText-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-RegularItalic.otf"; sourceTree = "<group>"; };
+		BECA3EAC20B8956E003A6E20 /* SFCompactText-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-HeavyItalic.otf"; sourceTree = "<group>"; };
+		BECA3EAD20B89573003A6E20 /* SFCompactText-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		BECA3EAE20B89576003A6E20 /* SFCompactText-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-LightItalic.otf"; sourceTree = "<group>"; };
+		BECA3EAF20B89578003A6E20 /* SFCompactText-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-Bold.otf"; sourceTree = "<group>"; };
+		BECA3EB020B89579003A6E20 /* SFCompactText-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-Semibold.otf"; sourceTree = "<group>"; };
+		BECEAEB420CEEBAC00C8EF21 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		BECEAEBA20CEEC0800C8EF21 /* AboutYourFinancesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutYourFinancesViewController.swift; sourceTree = "<group>"; };
+		BECEAEBC20CF7C1E00C8EF21 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		BECEAEC020CF936B00C8EF21 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +76,63 @@
 		BE0FA77120B6734200DBC191 /* FIRE */ = {
 			isa = PBXGroup;
 			children = (
-				BE0FA77220B6734200DBC191 /* AppDelegate.swift */,
-				BE0FA77620B6734200DBC191 /* Main.storyboard */,
-				BE0FA77C20B6734600DBC191 /* Assets.xcassets */,
-				BE0FA77E20B6734600DBC191 /* LaunchScreen.storyboard */,
-				BE0FA78120B6734700DBC191 /* Info.plist */,
+				BECA3EA320B89540003A6E20 /* UI */,
+				BECA3EA020B893EE003A6E20 /* ViewControllers */,
+				BECA3E9F20B893D3003A6E20 /* resources */,
 				BE0FA77920B6734200DBC191 /* FIRE.xcdatamodeld */,
 			);
 			path = FIRE;
+			sourceTree = "<group>";
+		};
+		BECA3E9F20B893D3003A6E20 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				BE0FA77220B6734200DBC191 /* AppDelegate.swift */,
+				BE0FA77C20B6734600DBC191 /* Assets.xcassets */,
+				BE0FA77E20B6734600DBC191 /* LaunchScreen.storyboard */,
+				BE0FA78120B6734700DBC191 /* Info.plist */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		BECA3EA020B893EE003A6E20 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BECEAEC020CF936B00C8EF21 /* fire.png */,
+				BECA3EA120B894CA003A6E20 /* WelcomeViewController.swift */,
+				BECEAEB420CEEBAC00C8EF21 /* InformationViewController.swift */,
+				BECEAEBA20CEEC0800C8EF21 /* AboutYourFinancesViewController.swift */,
+				BECEAEBC20CF7C1E00C8EF21 /* ResultsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BECA3EA320B89540003A6E20 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BECA3EA420B8954F003A6E20 /* Font */,
+				BE0FA77620B6734200DBC191 /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BECA3EA420B8954F003A6E20 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				BECA3EAF20B89578003A6E20 /* SFCompactText-Bold.otf */,
+				BECA3EA520B89565003A6E20 /* SFCompactText-BoldItalic.otf */,
+				BECA3EA820B89569003A6E20 /* SFCompactText-Heavy.otf */,
+				BECA3EAC20B8956E003A6E20 /* SFCompactText-HeavyItalic.otf */,
+				BECA3EA620B89566003A6E20 /* SFCompactText-Light.otf */,
+				BECA3EAE20B89576003A6E20 /* SFCompactText-LightItalic.otf */,
+				BECA3EAA20B8956C003A6E20 /* SFCompactText-Medium.otf */,
+				BECA3EA920B8956A003A6E20 /* SFCompactText-MediumItalic.otf */,
+				BECA3EA720B89568003A6E20 /* SFCompactText-Regular.otf */,
+				BECA3EAB20B8956D003A6E20 /* SFCompactText-RegularItalic.otf */,
+				BECA3EB020B89579003A6E20 /* SFCompactText-Semibold.otf */,
+				BECA3EAD20B89573003A6E20 /* SFCompactText-SemiboldItalic.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE0FA78020B6734600DBC191 /* LaunchScreen.storyboard in Resources */,
+				BECEAEC120CF936B00C8EF21 /* fire.png in Resources */,
 				BE0FA77D20B6734600DBC191 /* Assets.xcassets in Resources */,
 				BE0FA77820B6734200DBC191 /* Main.storyboard in Resources */,
 			);
@@ -135,8 +207,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BECA3EA220B894CA003A6E20 /* WelcomeViewController.swift in Sources */,
 				BE0FA77B20B6734200DBC191 /* FIRE.xcdatamodeld in Sources */,
+				BECEAEBB20CEEC0800C8EF21 /* AboutYourFinancesViewController.swift in Sources */,
 				BE0FA77320B6734200DBC191 /* AppDelegate.swift in Sources */,
+				BECEAEB520CEEBAD00C8EF21 /* InformationViewController.swift in Sources */,
+				BECEAEBD20CF7C1E00C8EF21 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +358,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XUF99SR6PQ;
-				INFOPLIST_FILE = FIRE/Info.plist;
+				INFOPLIST_FILE = FIRE/resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +376,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XUF99SR6PQ;
-				INFOPLIST_FILE = FIRE/Info.plist;
+				INFOPLIST_FILE = FIRE/resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
