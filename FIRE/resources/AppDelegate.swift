@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,10 +19,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-//        UILabel.appearance().font = UIFont(name: "SFCompactText-Regular", size: 17.0)
-//        let fontRegular = UIFont(name: "SFCompactText-Regular", size: 17.0)
-//        UILabel.appearance(whenContainedInInstancesOf: [UIButton.self]).font = fontRegular
-//        UILabel.appearance(whenContainedInInstancesOf: [UITextView.self]).font = fontRegular
+        IQKeyboardManager.sharedManager().enable = true
+
+//        let userDefaults = UserDefaults.standard
+//
+//        if !userDefaults.bool(forKey: "launchedBefore") {
+//            let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+//            let vc : WelcomeViewController = mainStoryboard.instantiateViewController(withIdentifier: "WalkThroughScreen") as! WelcomeViewController
+//            self.window?.makeKeyAndVisible()
+//            self.window?.rootViewController?.present(vc, animated: false, completion: nil)
+//            userDefaults.set(true, forKey: "launchedBefore")
+//            userDefaults.synchronize()
+//
+//        }
 
         return true
     }
