@@ -16,6 +16,9 @@ class ResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         resultsTextView.text = "Based on these inputs, you are \(year?.description ?? "?") years away from financial Independence! You could reach finacial independence when you are \(age?.description ?? "?") years old."
+        view.setGradientBackground(colorTop: UIColor.mmDarkGreen, colorBottom: UIColor.mmWhiteIce)
+        resultsTextView.backgroundColor = UIColor.clear
+        resultsTextView.textColor = UIColor.mmWhiteIce
     }
 
     var age: Int?

@@ -19,6 +19,7 @@ class AboutYourFinancesViewController: UIViewController {
     @IBOutlet weak var withdrawalRateTextField: UITextField!
     @IBOutlet weak var inflationRateTextField: UITextField!
     @IBOutlet weak var investmentReturnTextField: UITextField!
+    @IBOutlet weak var calculateButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,15 +32,17 @@ class AboutYourFinancesViewController: UIViewController {
         inflationRateTextField.delegate = self
         investmentReturnTextField.delegate = self
     
-        
-//        withdrawalRateTextField.text = "3% (Intial Withdrawal Rate)"
-//        inflationRateTextField.text = "3% (Rate Assumption)"
-//        investmentReturnTextField.text = "8% (Investment Return Assumption)"
+        view.setGradientBackground(colorTop: UIColor.mmDarkGreen, colorBottom: UIColor.mmWhiteIce)
+        calculateButton.layer.borderColor = UIColor.mmDarkGreen.cgColor
+        calculateButton.layer.cornerRadius = 5
+        calculateButton.layer.borderWidth = 1.0
+        calculateButton.backgroundColor = UIColor.mmDarkGreen
+        calculateButton.tintColor = UIColor.mmWhiteIce
+
     }
     
     var ageOfRetirment = 0
     var year = 0
-
     
     @IBAction func calculateButtonTapped(_ sender: UIButton) {
         if (ageTextField.text?.isEmpty)! || (annualIncomeTextField.text?.isEmpty)! || (annualSavingsRateTextField.text?.isEmpty)! || (yearlyExpensesTextField.text?.isEmpty)! || (totalSavingsTextField.text?.isEmpty)! || (withdrawalRateTextField.text?.isEmpty)! || (inflationRateTextField.text?.isEmpty)! || (investmentReturnTextField.text?.isEmpty)! {
@@ -57,8 +60,6 @@ class AboutYourFinancesViewController: UIViewController {
         }
       
     }
-    
-    
 
     func retirementCalculationFunction(completion: @escaping(_ success: Bool) -> Void) {
         guard var totalSavings = Int(totalSavingsTextField.text!) else { return }

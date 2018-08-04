@@ -21,17 +21,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         IQKeyboardManager.sharedManager().enable = true
 
-//        let userDefaults = UserDefaults.standard
-//
-//        if !userDefaults.bool(forKey: "launchedBefore") {
-//            let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-//            let vc : WelcomeViewController = mainStoryboard.instantiateViewController(withIdentifier: "WalkThroughScreen") as! WelcomeViewController
-//            self.window?.makeKeyAndVisible()
-//            self.window?.rootViewController?.present(vc, animated: false, completion: nil)
-//            userDefaults.set(true, forKey: "launchedBefore")
-//            userDefaults.synchronize()
-//
-//        }
+        let userDefaults = UserDefaults.standard
+
+        if !userDefaults.bool(forKey: "launchedBefore") {
+            let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+            let vc : WelcomeViewController = mainStoryboard.instantiateViewController(withIdentifier: "WalkThroughScreen") as! WelcomeViewController
+            self.window?.makeKeyAndVisible()
+            self.window?.rootViewController?.present(vc, animated: false, completion: nil)
+            userDefaults.set(true, forKey: "launchedBefore")
+            userDefaults.synchronize()
+
+        }
 
         return true
     }
