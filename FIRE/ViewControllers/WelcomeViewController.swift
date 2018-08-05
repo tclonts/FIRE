@@ -22,6 +22,14 @@ class WelcomeViewController: UIViewController {
         informationLabel.alpha = 0
         getStartedButton.alpha = 0
         greenFireImageView.alpha = 0
+        
+        
+        getStartedButton.layer.borderColor = UIColor.mmWhiteIce.cgColor
+        getStartedButton.layer.borderWidth = 1
+        getStartedButton.layer.cornerRadius = getStartedButton.frame.size.height/2
+        getStartedButton.layer.masksToBounds = true
+        getStartedButton.tintColor = UIColor.mmWhiteIce
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -33,7 +41,8 @@ class WelcomeViewController: UIViewController {
     
     func showGreenFireImageView() {
         UIView.animate(withDuration: 1, animations: {
-            self.greenFireImageView.alpha = 0.6
+            self.view.backgroundColor = UIColor.mmDarkGreen
+            self.view.alpha = 1
         }) { (true) in
             self.showWelcomeLabel()
             

@@ -1,33 +1,34 @@
 //
-//  purposeViewController.swift
+//  InformationViewController.swift
 //  FIRE
 //
-//  Created by Tyler Clonts on 8/4/18.
+//  Created by Tyler Clonts on 6/11/18.
 //  Copyright © 2018 Tyler Clonts. All rights reserved.
 //
 
 import UIKit
 
-class PurposeViewController: UIViewController {
+class PowerViewController: UIViewController {
     
     
-    @IBOutlet weak var learnMoreButton: UIButton!
-  
-    
-    @IBOutlet weak var viewTwo: UIView!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var circleImageView: UIImageView!
+    @IBOutlet weak var viewTwo: UIView!
+    @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var textView: UITextView!
-    @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var pageControl: UIPageControl!
-    @IBOutlet weak var nextArrowButton: UIButton!
     @IBOutlet weak var backArrowButton: UIButton!
+    @IBOutlet weak var nextArrowButton: UIButton!
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.imageView.alpha = 0
+//        viewTwo.alpha = 0
+        imageView.alpha = 0
+        circleImageView.alpha = 0
         
         view.backgroundColor = UIColor.mmDarkGreen
         viewTwo.backgroundColor = UIColor.mmDarkGreen
@@ -42,26 +43,33 @@ class PurposeViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
         showImageView()
     }
     
-    @IBAction func learnMoreButtonTapped(_ sender: UIButton) {
-        
-
-        
-        UIApplication.shared.open(NSURL(string: "https://mrfiguy.com/2018/05/28/what-is-financial-independence/")! as URL, options: [:], completionHandler: { (success) in
-            print("Open url : \(success)")
-        })
-    }
+//    func showViewTwo() {
+//        UIView.animate(withDuration: 1, animations: {
+//            self.viewTwo.alpha = 1
+//
+//        }) { (true) in
+//            self.showImageView()
+//        }
+//    }
     
     func showImageView() {
         UIView.animate(withDuration: 1, animations: {
             self.imageView.alpha = 1
             
         }) { (true) in
+            self.showCircleImageView()
+        }
+    }
+    
+    func showCircleImageView() {
+        UIView.animate(withDuration: 1, animations: {
+            self.circleImageView.alpha = 1
+        }) { (true) in
             
         }
     }
-
-    
 }

@@ -32,7 +32,7 @@ class AboutYourFinancesViewController: UIViewController {
         inflationRateTextField.delegate = self
         investmentReturnTextField.delegate = self
     
-        view.setGradientBackground(colorTop: UIColor.mmDarkGreen, colorBottom: UIColor.mmWhiteIce)
+        view.backgroundColor = UIColor.mmDarkGreen
         calculateButton.layer.borderColor = UIColor.mmDarkGreen.cgColor
         calculateButton.layer.cornerRadius = 5
         calculateButton.layer.borderWidth = 1.0

@@ -1,35 +1,32 @@
 //
-//  InformationViewController.swift
+//  FutureViewController.swift
 //  FIRE
 //
-//  Created by Tyler Clonts on 6/11/18.
+//  Created by Tyler Clonts on 8/4/18.
 //  Copyright © 2018 Tyler Clonts. All rights reserved.
 //
 
 import UIKit
 
-class InformationViewController: UIViewController {
+class FutureViewController: UIViewController {
     
-    
-    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var viewTwo: UIView!
-    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var pageControl: UIPageControl!
-    @IBOutlet weak var backArrowButton: UIButton!
     @IBOutlet weak var nextArrowButton: UIButton!
+    @IBOutlet weak var backArrowButton: UIButton!
     
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        viewTwo.alpha = 0
-        imageView.alpha = 0
+
+        self.imageView.alpha = 0
         
         view.backgroundColor = UIColor.mmDarkGreen
-        viewTwo.backgroundColor = UIColor.mmWhiteIce
+        viewTwo.backgroundColor = UIColor.mmDarkGreen
         textView.backgroundColor = UIColor.mmDarkGreen
         titleLabel.textColor = UIColor.mmWhiteIce
         textView.textColor = UIColor.mmWhiteIce
@@ -41,25 +38,17 @@ class InformationViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        showViewTwo()
+        showImageView()
     }
     
-    func showViewTwo() {
-        UIView.animate(withDuration: 1, animations: {
-            self.viewTwo.alpha = 1
-            
-        }) { (true) in
-            self.showImageView()
-        }
-    }
-    
+
     func showImageView() {
         UIView.animate(withDuration: 1, animations: {
             self.imageView.alpha = 1
+            
         }) { (true) in
             
         }
     }
-    
+
 }

@@ -14,6 +14,7 @@
 		BE0FA77D20B6734600DBC191 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE0FA77C20B6734600DBC191 /* Assets.xcassets */; };
 		BE0FA78020B6734600DBC191 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0FA77E20B6734600DBC191 /* LaunchScreen.storyboard */; };
 		BE2DAF9C211632AE00525169 /* PurposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2DAF9B211632AE00525169 /* PurposeViewController.swift */; };
+		BE2DAF9E2116454F00525169 /* FutureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2DAF9D2116454F00525169 /* FutureViewController.swift */; };
 		BEC8A2BD20D96A6200608A9F /* SFCompactDisplay-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEC8A2A820D96A6200608A9F /* SFCompactDisplay-Heavy.otf */; };
 		BEC8A2BE20D96A6200608A9F /* SFCompactText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEC8A2A920D96A6200608A9F /* SFCompactText-Medium.otf */; };
 		BEC8A2BF20D96A6200608A9F /* SFCompactText-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEC8A2AA20D96A6200608A9F /* SFCompactText-SemiboldItalic.otf */; };
@@ -37,7 +38,7 @@
 		BEC8A2D120D96A6200608A9F /* SFCompactDisplay-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEC8A2BC20D96A6200608A9F /* SFCompactDisplay-Thin.otf */; };
 		BEC8A2D320D96BA500608A9F /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC8A2D220D96BA500608A9F /* ColorHelper.swift */; };
 		BECA3EA220B894CA003A6E20 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA3EA120B894CA003A6E20 /* WelcomeViewController.swift */; };
-		BECEAEB520CEEBAD00C8EF21 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECEAEB420CEEBAC00C8EF21 /* InformationViewController.swift */; };
+		BECEAEB520CEEBAD00C8EF21 /* PowerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECEAEB420CEEBAC00C8EF21 /* PowerViewController.swift */; };
 		BECEAEBB20CEEC0800C8EF21 /* AboutYourFinancesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECEAEBA20CEEC0800C8EF21 /* AboutYourFinancesViewController.swift */; };
 		BECEAEBD20CF7C1E00C8EF21 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECEAEBC20CF7C1E00C8EF21 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -53,6 +54,7 @@
 		BE0FA77F20B6734600DBC191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE0FA78120B6734700DBC191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE2DAF9B211632AE00525169 /* PurposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurposeViewController.swift; sourceTree = "<group>"; };
+		BE2DAF9D2116454F00525169 /* FutureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureViewController.swift; sourceTree = "<group>"; };
 		BEC8A2A820D96A6200608A9F /* SFCompactDisplay-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Heavy.otf"; sourceTree = "<group>"; };
 		BEC8A2A920D96A6200608A9F /* SFCompactText-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-Medium.otf"; sourceTree = "<group>"; };
 		BEC8A2AA20D96A6200608A9F /* SFCompactText-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-SemiboldItalic.otf"; sourceTree = "<group>"; };
@@ -88,7 +90,7 @@
 		BECA3EAE20B89576003A6E20 /* SFCompactText-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-LightItalic.otf"; sourceTree = "<group>"; };
 		BECA3EAF20B89578003A6E20 /* SFCompactText-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-Bold.otf"; sourceTree = "<group>"; };
 		BECA3EB020B89579003A6E20 /* SFCompactText-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-Semibold.otf"; sourceTree = "<group>"; };
-		BECEAEB420CEEBAC00C8EF21 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		BECEAEB420CEEBAC00C8EF21 /* PowerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerViewController.swift; sourceTree = "<group>"; };
 		BECEAEBA20CEEC0800C8EF21 /* AboutYourFinancesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutYourFinancesViewController.swift; sourceTree = "<group>"; };
 		BECEAEBC20CF7C1E00C8EF21 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		E657DBF7728CEE8AD9801B12 /* Pods_FIRE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FIRE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,7 +199,8 @@
 			isa = PBXGroup;
 			children = (
 				BECA3EA120B894CA003A6E20 /* WelcomeViewController.swift */,
-				BECEAEB420CEEBAC00C8EF21 /* InformationViewController.swift */,
+				BECEAEB420CEEBAC00C8EF21 /* PowerViewController.swift */,
+				BE2DAF9D2116454F00525169 /* FutureViewController.swift */,
 				BE2DAF9B211632AE00525169 /* PurposeViewController.swift */,
 				BECEAEBA20CEEC0800C8EF21 /* AboutYourFinancesViewController.swift */,
 				BECEAEBC20CF7C1E00C8EF21 /* ResultsViewController.swift */,
@@ -367,11 +370,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BECA3EA220B894CA003A6E20 /* WelcomeViewController.swift in Sources */,
+				BE2DAF9E2116454F00525169 /* FutureViewController.swift in Sources */,
 				BE0FA77B20B6734200DBC191 /* FIRE.xcdatamodeld in Sources */,
 				BECEAEBB20CEEC0800C8EF21 /* AboutYourFinancesViewController.swift in Sources */,
 				BE2DAF9C211632AE00525169 /* PurposeViewController.swift in Sources */,
 				BE0FA77320B6734200DBC191 /* AppDelegate.swift in Sources */,
-				BECEAEB520CEEBAD00C8EF21 /* InformationViewController.swift in Sources */,
+				BECEAEB520CEEBAD00C8EF21 /* PowerViewController.swift in Sources */,
 				BEC8A2D320D96BA500608A9F /* ColorHelper.swift in Sources */,
 				BECEAEBD20CF7C1E00C8EF21 /* ResultsViewController.swift in Sources */,
 			);
