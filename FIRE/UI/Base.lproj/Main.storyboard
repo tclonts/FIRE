@@ -167,7 +167,6 @@
                                         <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
                                         <state key="normal" title="&gt;"/>
                                         <connections>
-                                            <action selector="nextButtonTapped:" destination="72Z-A2-Q4L" eventType="touchUpInside" id="SZM-jY-4R4"/>
                                             <segue destination="IS0-da-fSY" kind="show" id="pvX-5e-q7g"/>
                                         </connections>
                                     </button>
@@ -212,7 +211,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DL2-6L-hqD" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="Q61-YC-Xbo">
                     <connections>
-                        <segue destination="IS0-da-fSY" kind="presentation" id="pE1-rT-1Mj"/>
+                        <segue destination="IS0-da-fSY" kind="show" id="pE1-rT-1Mj"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -255,10 +254,10 @@
                                 <viewLayoutGuide key="safeArea" id="6UD-mh-f9v"/>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7MK-08-dzq">
-                                <rect key="frame" x="67" y="75" width="240" height="282"/>
+                                <rect key="frame" x="67" y="119" width="240" height="238"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Future" translatesAutoresizingMaskIntoConstraints="NO" id="aw8-TP-PFz">
-                                        <rect key="frame" x="100" y="71" width="40" height="140"/>
+                                        <rect key="frame" x="100" y="49" width="40" height="140"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="140" id="EeU-JF-D5E"/>
                                         </constraints>
@@ -369,10 +368,10 @@
                                 <viewLayoutGuide key="safeArea" id="75z-GL-2YH"/>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eeu-wQ-OPr">
-                                <rect key="frame" x="67" y="83" width="240" height="274"/>
+                                <rect key="frame" x="67" y="127" width="240" height="230"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mission" translatesAutoresizingMaskIntoConstraints="NO" id="CxV-zw-Lfd">
-                                        <rect key="frame" x="95" y="67" width="50" height="140"/>
+                                        <rect key="frame" x="95" y="45" width="50" height="140"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="140" id="plN-a8-UdE"/>
                                         </constraints>
@@ -454,7 +453,7 @@
             </objects>
             <point key="canvasLocation" x="2477.5999999999999" y="111.99400299850076"/>
         </scene>
-        <!--FI Calculator-->
+        <!--About Your Finances View Controller-->
         <scene sceneID="Ext-1o-7Zt">
             <objects>
                 <viewController id="XST-jC-8UZ" customClass="AboutYourFinancesViewController" customModule="FIRE" customModuleProvider="target" sceneMemberID="viewController">
@@ -463,82 +462,307 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SNz-wf-ZDa">
-                                <rect key="frame" x="37" y="153.5" width="300" height="424"/>
+                                <rect key="frame" x="37" y="104" width="300" height="524"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aPc-wG-z9C">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yTr-1l-O4a">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ecn-TS-1K8" userLabel="Age">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="40"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="dBG-GG-pW7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Years Old" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aPc-wG-z9C">
+                                                <rect key="frame" x="43" y="0.0" width="257" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="0gG-OY-J7Y"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                        <color key="value" red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cjb-Og-ChB">
+                                        <rect key="frame" x="0.0" y="48" width="300" height="1"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="0gG-OY-J7Y"/>
+                                            <constraint firstAttribute="height" constant="1" id="WQr-vn-DxN"/>
                                         </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$ Annual Income" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="11z-jw-u96">
-                                        <rect key="frame" x="0.0" y="48" width="300" height="40"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PVa-2f-dOw">
+                                        <rect key="frame" x="0.0" y="57" width="300" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccU-jn-jna" userLabel="AI">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="40"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="NP9-6h-Uks"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$ Annual Income" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="11z-jw-u96">
+                                                <rect key="frame" x="43" y="0.0" width="257" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="ORK-AJ-5Gl"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                        <color key="value" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AtB-OP-HZC">
+                                        <rect key="frame" x="0.0" y="105" width="300" height="1"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="ORK-AJ-5Gl"/>
+                                            <constraint firstAttribute="height" constant="1" id="MtH-a2-toH"/>
                                         </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$ Annual Savings Rate %" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ifw-qB-f0J">
-                                        <rect key="frame" x="0.0" y="96" width="300" height="40"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="y5g-hk-z5J">
+                                        <rect key="frame" x="0.0" y="114" width="300" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ASR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gb-eG-wCt">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="40"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="7q0-dF-zrN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$ Annual Savings Rate %" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ifw-qB-f0J">
+                                                <rect key="frame" x="43" y="0.0" width="257" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="sso-cn-WeE"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                        <color key="value" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Egd-C7-U9J">
+                                        <rect key="frame" x="0.0" y="162" width="300" height="1"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="sso-cn-WeE"/>
+                                            <constraint firstAttribute="height" constant="1" id="q0N-Kx-iLc"/>
                                         </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$ Yearly Expenses" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b8m-9W-OZs">
-                                        <rect key="frame" x="0.0" y="144" width="300" height="40"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UQc-fI-3cx">
+                                        <rect key="frame" x="0.0" y="171" width="300" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTk-TE-3J6">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="40"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="S4c-p3-deu"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$ Yearly Expenses" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b8m-9W-OZs">
+                                                <rect key="frame" x="43" y="0.0" width="257" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="sme-N1-lPS"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                        <color key="value" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TOC-ZK-dv0">
+                                        <rect key="frame" x="0.0" y="219" width="300" height="1"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="sme-N1-lPS"/>
+                                            <constraint firstAttribute="height" constant="1" id="wm0-1x-JUG"/>
                                         </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$ Total Savings" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ar5-8Z-jsM">
-                                        <rect key="frame" x="0.0" y="192" width="300" height="40"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="i01-Su-ysK">
+                                        <rect key="frame" x="0.0" y="228" width="300" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FaF-nu-scW">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="40"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="w3T-qc-JZH"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$ Total Savings" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ar5-8Z-jsM">
+                                                <rect key="frame" x="43" y="0.0" width="257" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="EdK-yo-T7f"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                        <color key="value" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xdh-Ta-oP7">
+                                        <rect key="frame" x="0.0" y="276" width="300" height="1"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="EdK-yo-T7f"/>
+                                            <constraint firstAttribute="height" constant="1" id="Xlr-4P-iVx"/>
                                         </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="3% (Intial Withdrawal Rate)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j4p-Qa-SqH">
-                                        <rect key="frame" x="0.0" y="240" width="300" height="40"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DUE-hI-qLX">
+                                        <rect key="frame" x="0.0" y="285" width="300" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IWR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAd-D2-Zsl">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="40"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="Kld-aH-j4L"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="4% (Intial Withdrawal Rate)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j4p-Qa-SqH">
+                                                <rect key="frame" x="43" y="0.0" width="257" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="OaP-rG-8Ta"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                        <color key="value" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNr-uc-YCO">
+                                        <rect key="frame" x="0.0" y="333" width="300" height="1"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="OaP-rG-8Ta"/>
+                                            <constraint firstAttribute="height" constant="1" id="gxB-KH-DFL"/>
                                         </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="3% (Rate Assumption)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v19-dQ-k2Z">
-                                        <rect key="frame" x="0.0" y="288" width="300" height="40"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Bae-4F-gbN">
+                                        <rect key="frame" x="0.0" y="342" width="300" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCF-hK-jCf">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="40"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="KL4-2C-HZ0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="3% (Rate Assumption)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v19-dQ-k2Z">
+                                                <rect key="frame" x="43" y="0.0" width="257" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="xrB-ME-ail"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                        <color key="value" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vEa-bU-oAx">
+                                        <rect key="frame" x="0.0" y="390" width="300" height="1"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="xrB-ME-ail"/>
+                                            <constraint firstAttribute="height" constant="1" id="VRh-CQ-33U"/>
                                         </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="8% (Investment Return Assumption)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Syw-f9-NGu">
-                                        <rect key="frame" x="0.0" y="336" width="300" height="40"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="73s-Yy-rwF">
+                                        <rect key="frame" x="0.0" y="399" width="300" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xko-pg-tAq">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="40"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="bmv-cf-g3k"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="8% (Investment Return)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Syw-f9-NGu">
+                                                <rect key="frame" x="43" y="0.0" width="257" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="u40-zR-7g0"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                        <color key="value" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i3O-0f-cxl">
+                                        <rect key="frame" x="0.0" y="447" width="300" height="1"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="u40-zR-7g0"/>
+                                            <constraint firstAttribute="height" constant="1" id="2SZ-w4-i50"/>
                                         </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkE-Kk-NwE">
+                                        <rect key="frame" x="0.0" y="456" width="300" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="fxU-yL-TuO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                    </textField>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMv-oN-YJo">
-                                        <rect key="frame" x="0.0" y="384" width="300" height="40"/>
+                                        <rect key="frame" x="0.0" y="484" width="300" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="ZGO-eQ-0jC"/>
                                         </constraints>
@@ -550,16 +774,8 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="v19-dQ-k2Z" firstAttribute="width" secondItem="SNz-wf-ZDa" secondAttribute="width" id="1oH-8M-Xm1"/>
-                                    <constraint firstItem="11z-jw-u96" firstAttribute="width" secondItem="SNz-wf-ZDa" secondAttribute="width" id="8fE-gD-79h"/>
-                                    <constraint firstItem="Ar5-8Z-jsM" firstAttribute="width" secondItem="SNz-wf-ZDa" secondAttribute="width" id="Ab4-sI-ubV"/>
-                                    <constraint firstItem="j4p-Qa-SqH" firstAttribute="width" secondItem="SNz-wf-ZDa" secondAttribute="width" id="BlX-8M-bYA"/>
-                                    <constraint firstItem="Ifw-qB-f0J" firstAttribute="width" secondItem="SNz-wf-ZDa" secondAttribute="width" id="HNo-xp-Rga"/>
                                     <constraint firstAttribute="width" constant="300" id="W3O-br-9ub"/>
-                                    <constraint firstItem="Syw-f9-NGu" firstAttribute="width" secondItem="SNz-wf-ZDa" secondAttribute="width" id="WA3-Qa-9Zv"/>
-                                    <constraint firstItem="b8m-9W-OZs" firstAttribute="width" secondItem="SNz-wf-ZDa" secondAttribute="width" id="acg-0r-ugn"/>
                                     <constraint firstItem="UMv-oN-YJo" firstAttribute="width" secondItem="SNz-wf-ZDa" secondAttribute="width" id="eys-Am-9VY"/>
-                                    <constraint firstItem="aPc-wG-z9C" firstAttribute="width" secondItem="SNz-wf-ZDa" secondAttribute="width" id="yzd-3m-E9E"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -570,7 +786,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dhu-Wj-KyS"/>
                     </view>
-                    <navigationItem key="navigationItem" title="FI Calculator" id="fjo-bK-yTm"/>
+                    <navigationItem key="navigationItem" id="fjo-bK-yTm"/>
                     <connections>
                         <outlet property="ageTextField" destination="aPc-wG-z9C" id="o8Q-Jj-1mw"/>
                         <outlet property="annualIncomeTextField" destination="11z-jw-u96" id="Fzk-dF-meA"/>
@@ -588,7 +804,7 @@
             </objects>
             <point key="canvasLocation" x="4391.1999999999998" y="105.69715142428787"/>
         </scene>
-        <!--Results View Controller-->
+        <!--Results-->
         <scene sceneID="RbI-t7-0pu">
             <objects>
                 <viewController id="XGn-yM-r7e" customClass="ResultsViewController" customModule="FIRE" customModuleProvider="target" sceneMemberID="viewController">
@@ -613,43 +829,21 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MXO-su-CRh"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Results" id="Xfm-C9-hc9">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="WebLink" id="CvH-GI-c0D">
+                            <connections>
+                                <action selector="webLinkButtonTapped:" destination="XGn-yM-r7e" id="xPG-JL-CSy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="resultsTextView" destination="3a4-8a-smM" id="0py-Gx-G8e"/>
+                        <outlet property="webLink" destination="CvH-GI-c0D" id="Bvc-DU-IYH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ARr-6r-Ehe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5223.1999999999998" y="105.69715142428787"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="pcQ-HC-008">
-            <objects>
-                <viewController id="39x-BV-fFp" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9NB-uO-7HD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWd-YS-hOy">
-                                <rect key="frame" x="161" y="277" width="37" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
-                                <state key="normal" title="Next"/>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="How does this make you feel?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="E3S-sA-fjp">
-                                <rect key="frame" x="67" y="63" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="qyZ-g3-PGU"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OM9-SH-aEo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6104.8000000000002" y="111.99400299850076"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qkm-xG-IrP">
@@ -694,6 +888,7 @@
         <image name="GreenFire" width="91" height="137"/>
         <image name="Mission" width="50" height="50"/>
         <image name="Time" width="64" height="64"/>
+        <image name="WebLink" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="pE1-rT-1Mj"/>

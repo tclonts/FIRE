@@ -31,14 +31,58 @@ class AboutYourFinancesViewController: UIViewController {
         withdrawalRateTextField.delegate = self
         inflationRateTextField.delegate = self
         investmentReturnTextField.delegate = self
+        
+        ageTextField.backgroundColor = UIColor.mmDarkGreen
+        annualIncomeTextField.backgroundColor = UIColor.mmDarkGreen
+        annualSavingsRateTextField.backgroundColor = UIColor.mmDarkGreen
+        yearlyExpensesTextField.backgroundColor = UIColor.mmDarkGreen
+        totalSavingsTextField.backgroundColor = UIColor.mmDarkGreen
+        withdrawalRateTextField.backgroundColor = UIColor.mmDarkGreen
+        inflationRateTextField.backgroundColor = UIColor.mmDarkGreen
+        investmentReturnTextField.backgroundColor = UIColor.mmDarkGreen
+
+        
     
         view.backgroundColor = UIColor.mmDarkGreen
         calculateButton.layer.borderColor = UIColor.mmDarkGreen.cgColor
         calculateButton.layer.cornerRadius = 5
         calculateButton.layer.borderWidth = 1.0
-        calculateButton.backgroundColor = UIColor.mmDarkGreen
+        calculateButton.backgroundColor = UIColor.mmTealBlue
         calculateButton.tintColor = UIColor.mmWhiteIce
+        navigationController?.navigationBar.tintColor = UIColor.mmWhiteIce
 
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.largeTitleDisplayMode = .always
+        navigationItem.title = "FIRE Calculator"
+
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.mmWhiteIce]
+        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.mmWhiteIce]
+
+
+        if let navFrame = self.navigationController?.navigationBar.frame {
+            
+            //HERE
+            //Create a new frame with the default offset of the status bar
+            let newframe = CGRect(origin: .zero, size: CGSize(width: navFrame.width, height: (navFrame.height + UIApplication.shared.statusBarFrame.height) ))
+            
+            let image = gradientWithFrametoImage(frame: newframe, colors: [UIColor.mmTealBlue.cgColor, UIColor.mmlightForestGreen.cgColor])!
+            
+            self.navigationController?.navigationBar.barTintColor = UIColor(patternImage: image)
+            
+        }
+        
+
+    }
+    
+    func gradientWithFrametoImage(frame: CGRect, colors: [CGColor]) -> UIImage? {
+        let gradient: CAGradientLayer  = CAGradientLayer(layer: self.view.layer)
+        gradient.frame = frame
+        gradient.colors = colors
+        UIGraphicsBeginImageContext(frame.size)
+        gradient.render(in: UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image
     }
     
     var ageOfRetirment = 0

@@ -21,7 +21,7 @@ extension UIColor {
     static let mmWhiteIce = UIColor(red: 242.0/255.0, green: 242.0/255.0, blue: 242.0/255.0, alpha: 1.0)
 }
 
-extension UIView {
+extension UINavigationBar {
     
     // MARK: - Background gradient
     
@@ -31,9 +31,9 @@ extension UIView {
         gradientLayer.colors = [colorTop.cgColor, colorBottom.cgColor]
         gradientLayer.locations = [0.0, 1.0]
         gradientLayer.frame = bounds
-        
+            
         layer.insertSublayer(gradientLayer, at: 0)
-        //        layer.addSublayer(gradientLayer)
+                layer.addSublayer(gradientLayer)
     }
     func setButtonGradientBackground(colorTop: UIColor, colorBottom: UIColor) {
         
@@ -48,3 +48,15 @@ extension UIView {
     }
     
 }
+
+//extension UINavigationBar {
+//    
+//    func setGradientBackground(colors: [UIColor]) {
+//        
+//        var updatedFrame = bounds
+//        updatedFrame.size.height += self.frame.origin.y
+//        let gradientLayer = CAGradientLayer(frame: updatedFrame, colors: colors)
+//        
+//        setBackgroundImage(gradientLayer.createGradientImage(), for: UIBarMetrics.default)
+//    }
+//}
