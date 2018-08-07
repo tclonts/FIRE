@@ -14,14 +14,14 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var informationLabel: UILabel!
     @IBOutlet weak var getStartedButton: UIButton!
-    @IBOutlet weak var greenFireImageView: UIImageView!
+    @IBOutlet weak var fireWhiteImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         welcomeLabel.alpha = 0
         informationLabel.alpha = 0
         getStartedButton.alpha = 0
-        greenFireImageView.alpha = 0
+        fireWhiteImageView.alpha = 0
         
         
         getStartedButton.layer.borderColor = UIColor.mmWhiteIce.cgColor
@@ -35,11 +35,11 @@ class WelcomeViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-       showGreenFireImageView()
+       setView()
         
     }
     
-    func showGreenFireImageView() {
+    func setView() {
         UIView.animate(withDuration: 1, animations: {
             self.view.backgroundColor = UIColor.mmDarkGreen
             self.view.alpha = 1
@@ -52,6 +52,7 @@ class WelcomeViewController: UIViewController {
     func showWelcomeLabel() {
         UIView.animate(withDuration: 1, animations: {
             self.welcomeLabel.alpha = 1
+            self.fireWhiteImageView.alpha = 1
         }) { (true) in
              self.showInformationLabel()
         }

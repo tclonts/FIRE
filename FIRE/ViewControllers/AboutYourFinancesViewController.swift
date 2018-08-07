@@ -33,13 +33,21 @@ class AboutYourFinancesViewController: UIViewController {
         investmentReturnTextField.delegate = self
         
         ageTextField.backgroundColor = UIColor.mmDarkGreen
+        ageTextField.textColor = UIColor.mmWhiteIce
         annualIncomeTextField.backgroundColor = UIColor.mmDarkGreen
+        annualIncomeTextField.textColor = UIColor.mmWhiteIce
         annualSavingsRateTextField.backgroundColor = UIColor.mmDarkGreen
+        annualSavingsRateTextField.textColor = UIColor.mmWhiteIce
         yearlyExpensesTextField.backgroundColor = UIColor.mmDarkGreen
+        yearlyExpensesTextField.textColor = UIColor.mmWhiteIce
         totalSavingsTextField.backgroundColor = UIColor.mmDarkGreen
+        totalSavingsTextField.textColor = UIColor.mmWhiteIce
         withdrawalRateTextField.backgroundColor = UIColor.mmDarkGreen
+        withdrawalRateTextField.textColor = UIColor.mmWhiteIce
         inflationRateTextField.backgroundColor = UIColor.mmDarkGreen
+        inflationRateTextField.textColor = UIColor.mmWhiteIce
         investmentReturnTextField.backgroundColor = UIColor.mmDarkGreen
+        investmentReturnTextField.textColor = UIColor.mmWhiteIce
 
         
     
