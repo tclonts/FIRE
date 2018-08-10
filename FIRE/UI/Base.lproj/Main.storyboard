@@ -468,7 +468,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SNz-wf-ZDa">
                                 <rect key="frame" x="37.5" y="103" width="300" height="525"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yTr-1l-O4a">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yTr-1l-O4a">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ecn-TS-1K8" userLabel="Age">
@@ -482,7 +482,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Years Old" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aPc-wG-z9C">
-                                                <rect key="frame" x="43" y="0.0" width="257" height="30"/>
+                                                <rect key="frame" x="43" y="0.0" width="219" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -492,6 +492,15 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhf-kK-tDx">
+                                                <rect key="frame" x="270" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="JWj-TY-7Jt"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="yearsOldButtonTapped:" destination="XST-jC-8UZ" eventType="touchUpInside" id="ihO-A9-32F"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cjb-Og-ChB">
@@ -515,7 +524,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$ Annual Income" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="11z-jw-u96">
-                                                <rect key="frame" x="43" y="0.0" width="257" height="30"/>
+                                                <rect key="frame" x="43" y="0.0" width="219" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -525,6 +534,15 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dg-1H-B27">
+                                                <rect key="frame" x="270" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="E1T-aj-AiA"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="annualIncomeInfoButtonTapped:" destination="XST-jC-8UZ" eventType="touchUpInside" id="m9p-mk-fCT"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AtB-OP-HZC">
@@ -537,7 +555,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="y5g-hk-z5J">
                                         <rect key="frame" x="0.0" y="121.5" width="300" height="30"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ASR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gb-eG-wCt">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gb-eG-wCt">
                                                 <rect key="frame" x="0.0" y="0.0" width="35" height="30"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -547,8 +565,8 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$ Annual Savings %" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ifw-qB-f0J">
-                                                <rect key="frame" x="43" y="0.0" width="257" height="30"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Annual Savings %" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ifw-qB-f0J">
+                                                <rect key="frame" x="43" y="0.0" width="219" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -558,6 +576,15 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXv-Bv-WSk">
+                                                <rect key="frame" x="270" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="96P-ha-45u"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="annualSavingsInfoButtonTapped:" destination="XST-jC-8UZ" eventType="touchUpInside" id="jij-Hh-gn6"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Egd-C7-U9J">
@@ -581,7 +608,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$ Yearly Expenses" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b8m-9W-OZs">
-                                                <rect key="frame" x="43" y="0.0" width="257" height="30"/>
+                                                <rect key="frame" x="43" y="0.0" width="219" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -591,6 +618,15 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJh-Ka-P3g">
+                                                <rect key="frame" x="270" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="qFe-eF-igf"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="yearlyExpensesInfoButtonTapped:" destination="XST-jC-8UZ" eventType="touchUpInside" id="Q33-RR-RBv"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TOC-ZK-dv0">
@@ -614,7 +650,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$ Total Savings" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ar5-8Z-jsM">
-                                                <rect key="frame" x="43" y="0.0" width="257" height="30"/>
+                                                <rect key="frame" x="43" y="0.0" width="219" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -624,6 +660,15 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SY3-Hl-Tqn">
+                                                <rect key="frame" x="270" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="fkN-Ua-aXM"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="totalSavingsInfoButtonTapped:" destination="XST-jC-8UZ" eventType="touchUpInside" id="RAF-bd-aaF"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xdh-Ta-oP7">
@@ -636,7 +681,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DUE-hI-qLX">
                                         <rect key="frame" x="0.0" y="303" width="300" height="30"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IWR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAd-D2-Zsl">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAd-D2-Zsl">
                                                 <rect key="frame" x="0.0" y="0.0" width="35" height="30"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -647,7 +692,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="4% (Withdrawal Rate)" borderStyle="roundedRect" placeholder="4% (Intial Withdrawal Rate)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j4p-Qa-SqH">
-                                                <rect key="frame" x="43" y="0.0" width="257" height="30"/>
+                                                <rect key="frame" x="43" y="0.0" width="219" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -657,6 +702,15 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uq-O1-jjZ">
+                                                <rect key="frame" x="270" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="VvW-Mu-HqI"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="withdrawalRateInfoButtonTapped:" destination="XST-jC-8UZ" eventType="touchUpInside" id="iav-ti-BnE"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNr-uc-YCO">
@@ -669,7 +723,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Bae-4F-gbN">
                                         <rect key="frame" x="0.0" y="364" width="300" height="30"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCF-hK-jCf">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCF-hK-jCf">
                                                 <rect key="frame" x="0.0" y="0.0" width="35" height="30"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -680,7 +734,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="3% (Inflation Rate)" borderStyle="roundedRect" placeholder="3% (Rate Assumption)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v19-dQ-k2Z">
-                                                <rect key="frame" x="43" y="0.0" width="257" height="30"/>
+                                                <rect key="frame" x="43" y="0.0" width="219" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -690,6 +744,15 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wN0-u4-CKk">
+                                                <rect key="frame" x="270" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="EgI-6p-vT6"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="inflationRateInfoButtonTapped:" destination="XST-jC-8UZ" eventType="touchUpInside" id="2zS-Rd-k1D"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vEa-bU-oAx">
@@ -713,7 +776,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="8% (Investment Return)" borderStyle="roundedRect" placeholder="8% (Investment Return)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Syw-f9-NGu">
-                                                <rect key="frame" x="43" y="0.0" width="257" height="30"/>
+                                                <rect key="frame" x="43" y="0.0" width="219" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -723,6 +786,15 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ytc-Id-kMc">
+                                                <rect key="frame" x="270" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="PYm-oA-bhP"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="investmentReturnInfoButtonTapped:" destination="XST-jC-8UZ" eventType="touchUpInside" id="Rpc-qS-Zyi"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i3O-0f-cxl">
@@ -765,13 +837,21 @@
                     </navigationItem>
                     <connections>
                         <outlet property="ageTextField" destination="aPc-wG-z9C" id="o8Q-Jj-1mw"/>
+                        <outlet property="annualIncomeInfoButtom" destination="3dg-1H-B27" id="bm9-0U-5Sn"/>
                         <outlet property="annualIncomeTextField" destination="11z-jw-u96" id="Fzk-dF-meA"/>
+                        <outlet property="annualSavingsInfoButton" destination="mXv-Bv-WSk" id="KSu-eE-JCW"/>
                         <outlet property="annualSavingsRateTextField" destination="Ifw-qB-f0J" id="2gv-ug-nil"/>
                         <outlet property="calculateButton" destination="UMv-oN-YJo" id="TWt-nc-TJr"/>
+                        <outlet property="inflationRateInfoButton" destination="wN0-u4-CKk" id="Afb-me-Qqh"/>
                         <outlet property="inflationRateTextField" destination="v19-dQ-k2Z" id="gb1-LY-EMM"/>
+                        <outlet property="investmentReturnInfoButton" destination="Ytc-Id-kMc" id="XIv-J5-JN6"/>
                         <outlet property="investmentReturnTextField" destination="Syw-f9-NGu" id="pIX-iC-9Wf"/>
+                        <outlet property="totalSavingsInfoButton" destination="SY3-Hl-Tqn" id="QGm-kT-Fbx"/>
                         <outlet property="totalSavingsTextField" destination="Ar5-8Z-jsM" id="PA3-Xq-lUk"/>
+                        <outlet property="withdrawalRateInfoButton" destination="3uq-O1-jjZ" id="IkU-6D-fYH"/>
                         <outlet property="withdrawalRateTextField" destination="j4p-Qa-SqH" id="tmE-Bs-Cd4"/>
+                        <outlet property="yearOldInfoButton" destination="Vhf-kK-tDx" id="Mnh-4b-vuB"/>
+                        <outlet property="yearlyExpensesInfoButton" destination="DJh-Ka-P3g" id="p9v-AY-AFa"/>
                         <outlet property="yearlyExpensesTextField" destination="b8m-9W-OZs" id="UBJ-fq-hYD"/>
                         <segue destination="XGn-yM-r7e" kind="show" identifier="toResults" id="Kv1-tT-oSs"/>
                     </connections>

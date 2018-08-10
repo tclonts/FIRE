@@ -21,6 +21,19 @@ class AboutYourFinancesViewController: UIViewController {
     @IBOutlet weak var investmentReturnTextField: UITextField!
     @IBOutlet weak var calculateButton: UIButton!
     
+    
+    @IBOutlet weak var yearOldInfoButton: UIButton!
+    @IBOutlet weak var annualIncomeInfoButtom: UIButton!
+    @IBOutlet weak var annualSavingsInfoButton: UIButton!
+    @IBOutlet weak var yearlyExpensesInfoButton: UIButton!
+    @IBOutlet weak var totalSavingsInfoButton: UIButton!
+    @IBOutlet weak var withdrawalRateInfoButton: UIButton!
+    @IBOutlet weak var inflationRateInfoButton: UIButton!
+    @IBOutlet weak var investmentReturnInfoButton: UIButton!
+    
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ageTextField.delegate = self
@@ -76,21 +89,58 @@ class AboutYourFinancesViewController: UIViewController {
             let image = gradientWithFrametoImage(frame: newframe, colors: [UIColor.mmTealBlue.cgColor, UIColor.mmlightForestGreen.cgColor])!
             
             self.navigationController?.navigationBar.barTintColor = UIColor(patternImage: image)
-            
         }
+        setupInfoButtonColor()
+    }
+    
+    
+    // Info Button Alerts
+    
+    @IBAction func yearsOldButtonTapped(_ sender: UIButton) {
         
-//        setupLogo()
+        presentSimpleAlert(title: "Ok", message: "sadfsdfasdfasdfas")
+
+    }
+    @IBAction func annualIncomeInfoButtonTapped(_ sender: UIButton) {
+        presentSimpleAlert(title: "Ok", message: "sadfsdfasdfasdfas")
+
+    }
+    @IBAction func annualSavingsInfoButtonTapped(_ sender: UIButton) {
+        presentSimpleAlert(title: "Ok", message: "sadfsdfasdfasdfas")
         
+    }
+    @IBAction func yearlyExpensesInfoButtonTapped(_ sender: UIButton) {
+        presentSimpleAlert(title: "Ok", message: "sadfsdfasdfasdfas")
+
+    }
+    @IBAction func totalSavingsInfoButtonTapped(_ sender: UIButton) {
+        presentSimpleAlert(title: "Ok", message: "sadfsdfasdfasdfas")
+    }
+    @IBAction func withdrawalRateInfoButtonTapped(_ sender: UIButton) {
+        presentSimpleAlert(title: "Ok", message: "sadfsdfasdfasdfas")
+
+    }
+    @IBAction func inflationRateInfoButtonTapped(_ sender: UIButton) {
+        presentSimpleAlert(title: "Ok", message: "sadfsdfasdfasdfas")
+
+    }
+    @IBAction func investmentReturnInfoButtonTapped(_ sender: UIButton) {
+        presentSimpleAlert(title: "Ok", message: "sadfsdfasdfasdfas")
 
     }
     
-    func setupLogo() {
-//        let button = UIButton.init(type: .custom)
-//        button.setImage(UIImage.init(named: "FireWhiteIcon"), for: UIControlState.normal)
-//        button.frame = CGRect.init(x: 0, y: 0, width: 30, height: 40)
-//        let barButton = UIBarButtonItem.init(customView: button)
-//        self.navigationItem.rightBarButtonItem = barButton
-//        barButton.isEnabled = false
+    
+    
+    
+    func setupInfoButtonColor() {
+        yearOldInfoButton.tintColor = UIColor.mmWhiteIce
+        annualIncomeInfoButtom.tintColor = UIColor.mmWhiteIce
+        annualSavingsInfoButton.tintColor = UIColor.mmWhiteIce
+        yearlyExpensesInfoButton.tintColor = UIColor.mmWhiteIce
+        totalSavingsInfoButton.tintColor = UIColor.mmWhiteIce
+        withdrawalRateInfoButton.tintColor = UIColor.mmWhiteIce
+        inflationRateInfoButton.tintColor = UIColor.mmWhiteIce
+        investmentReturnInfoButton.tintColor = UIColor.mmWhiteIce
     }
     
     func gradientWithFrametoImage(frame: CGRect, colors: [CGColor]) -> UIImage? {
