@@ -15,6 +15,7 @@
 		BE0FA78020B6734600DBC191 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0FA77E20B6734600DBC191 /* LaunchScreen.storyboard */; };
 		BE2DAF9C211632AE00525169 /* PurposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2DAF9B211632AE00525169 /* PurposeViewController.swift */; };
 		BE2DAF9E2116454F00525169 /* FutureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2DAF9D2116454F00525169 /* FutureViewController.swift */; };
+		BE3A99772119E506006CF70B /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A99762119E506006CF70B /* AppUtility.swift */; };
 		BEC8A2BD20D96A6200608A9F /* SFCompactDisplay-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEC8A2A820D96A6200608A9F /* SFCompactDisplay-Heavy.otf */; };
 		BEC8A2BE20D96A6200608A9F /* SFCompactText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEC8A2A920D96A6200608A9F /* SFCompactText-Medium.otf */; };
 		BEC8A2BF20D96A6200608A9F /* SFCompactText-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEC8A2AA20D96A6200608A9F /* SFCompactText-SemiboldItalic.otf */; };
@@ -55,6 +56,7 @@
 		BE0FA78120B6734700DBC191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE2DAF9B211632AE00525169 /* PurposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurposeViewController.swift; sourceTree = "<group>"; };
 		BE2DAF9D2116454F00525169 /* FutureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureViewController.swift; sourceTree = "<group>"; };
+		BE3A99762119E506006CF70B /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 		BEC8A2A820D96A6200608A9F /* SFCompactDisplay-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Heavy.otf"; sourceTree = "<group>"; };
 		BEC8A2A920D96A6200608A9F /* SFCompactText-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-Medium.otf"; sourceTree = "<group>"; };
 		BEC8A2AA20D96A6200608A9F /* SFCompactText-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-SemiboldItalic.otf"; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				BE0FA77E20B6734600DBC191 /* LaunchScreen.storyboard */,
 				BE0FA78120B6734700DBC191 /* Info.plist */,
 				BEC8A2D220D96BA500608A9F /* ColorHelper.swift */,
+				BE3A99762119E506006CF70B /* AppUtility.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 			files = (
 				BECA3EA220B894CA003A6E20 /* WelcomeViewController.swift in Sources */,
 				BE2DAF9E2116454F00525169 /* FutureViewController.swift in Sources */,
+				BE3A99772119E506006CF70B /* AppUtility.swift in Sources */,
 				BE0FA77B20B6734200DBC191 /* FIRE.xcdatamodeld in Sources */,
 				BECEAEBB20CEEC0800C8EF21 /* AboutYourFinancesViewController.swift in Sources */,
 				BE2DAF9C211632AE00525169 /* PurposeViewController.swift in Sources */,

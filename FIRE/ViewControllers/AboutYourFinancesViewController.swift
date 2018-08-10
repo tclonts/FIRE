@@ -79,7 +79,18 @@ class AboutYourFinancesViewController: UIViewController {
             
         }
         
+//        setupLogo()
+        
 
+    }
+    
+    func setupLogo() {
+//        let button = UIButton.init(type: .custom)
+//        button.setImage(UIImage.init(named: "FireWhiteIcon"), for: UIControlState.normal)
+//        button.frame = CGRect.init(x: 0, y: 0, width: 30, height: 40)
+//        let barButton = UIBarButtonItem.init(customView: button)
+//        self.navigationItem.rightBarButtonItem = barButton
+//        barButton.isEnabled = false
     }
     
     func gradientWithFrametoImage(frame: CGRect, colors: [CGColor]) -> UIImage? {
@@ -119,9 +130,9 @@ class AboutYourFinancesViewController: UIViewController {
         let annualSavingsRate = Double(annualSavingsRateTextField.text!)! / 100.0
         let annualDollarsSaved = Int(Double(annualIncome) * (annualSavingsRate))
         let yearlyExpenses = Int(yearlyExpensesTextField.text!)
-        let withdrawalRate = Double(withdrawalRateTextField.text!)! / 100.0
+        let withdrawalRate = 4.0 / 100.0
         let financialIndependenceNumber = Int((Double(yearlyExpenses!)) / withdrawalRate)
-        let portfolioPercentageRate = Double(investmentReturnTextField.text!)! / 100.0
+        let portfolioPercentageRate = 8.0 / 100.0
         var year = 0
         
         while totalSavings < financialIndependenceNumber {

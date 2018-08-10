@@ -41,6 +41,11 @@ class PowerViewController: UIViewController {
         nextArrowButton.tintColor = UIColor.mmTealBlue
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        textView.setContentOffset(CGPoint.zero, animated: false)
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
