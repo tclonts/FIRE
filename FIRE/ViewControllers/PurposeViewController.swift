@@ -11,10 +11,6 @@ import UIKit
 class PurposeViewController: UIViewController {
     
     
-    @IBOutlet weak var learnMoreButton: UIButton!
-  
-    
-    @IBOutlet weak var viewTwo: UIView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var textView: UITextView!
@@ -30,7 +26,6 @@ class PurposeViewController: UIViewController {
         self.imageView.alpha = 0
         
         view.backgroundColor = UIColor.mmDarkGreen
-        viewTwo.backgroundColor = UIColor.mmDarkGreen
         textView.backgroundColor = UIColor.mmDarkGreen
         titleLabel.textColor = UIColor.mmWhiteIce
         textView.textColor = UIColor.mmWhiteIce
@@ -38,6 +33,9 @@ class PurposeViewController: UIViewController {
         pageControl.pageIndicatorTintColor = UIColor.mmWhiteIce
         backArrowButton.tintColor = UIColor.mmTealBlue
         nextArrowButton.tintColor = UIColor.mmTealBlue
+        
+        imageView.loadGif(name: "Compass")
+    
     }
     
     override func viewDidLayoutSubviews() {
@@ -50,15 +48,6 @@ class PurposeViewController: UIViewController {
         showImageView()
     }
     
-    @IBAction func learnMoreButtonTapped(_ sender: UIButton) {
-        
-
-        
-        UIApplication.shared.open(NSURL(string: "https://mrfiguy.com/2018/05/28/what-is-financial-independence/")! as URL, options: [:], completionHandler: { (success) in
-            print("Open url : \(success)")
-        })
-    }
-    
     func showImageView() {
         UIView.animate(withDuration: 1, animations: {
             self.imageView.alpha = 1
@@ -67,6 +56,15 @@ class PurposeViewController: UIViewController {
             
         }
     }
+//    @IBAction func learnMoreButtonTapped(_ sender: UIButton) {
+//        
+//
+//        
+//        UIApplication.shared.open(NSURL(string: "https://mrfiguy.com/2018/05/28/what-is-financial-independence/")! as URL, options: [:], completionHandler: { (success) in
+//            print("Open url : \(success)")
+//        })
+//    }
+    
 
     
 }

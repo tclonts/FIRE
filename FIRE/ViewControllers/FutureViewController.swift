@@ -10,7 +10,6 @@ import UIKit
 
 class FutureViewController: UIViewController {
     
-    @IBOutlet weak var viewTwo: UIView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var textView: UITextView!
@@ -26,7 +25,6 @@ class FutureViewController: UIViewController {
         self.imageView.alpha = 0
         
         view.backgroundColor = UIColor.mmDarkGreen
-        viewTwo.backgroundColor = UIColor.mmDarkGreen
         textView.backgroundColor = UIColor.mmDarkGreen
         titleLabel.textColor = UIColor.mmWhiteIce
         textView.textColor = UIColor.mmWhiteIce
@@ -34,6 +32,8 @@ class FutureViewController: UIViewController {
         pageControl.pageIndicatorTintColor = UIColor.mmWhiteIce
         backArrowButton.tintColor = UIColor.mmTealBlue
         nextArrowButton.tintColor = UIColor.mmTealBlue
+        
+        imageView.loadGif(name: "Rock")
     }
     
     override func viewDidLayoutSubviews() {

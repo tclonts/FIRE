@@ -24,9 +24,12 @@ class WelcomeViewController: UIViewController {
         fireWhiteImageView.alpha = 0
         
         
-        getStartedButton.layer.borderColor = UIColor.mmWhiteIce.cgColor
+        getStartedButton.layer.borderColor = UIColor.mmTealBlue.cgColor
         getStartedButton.layer.borderWidth = 1
-        getStartedButton.layer.cornerRadius = getStartedButton.frame.size.height/2
+        getStartedButton.layer.cornerRadius = 5
+        getStartedButton.backgroundColor = UIColor.mmTealBlue
+       
+//        getStartedButton.layer.cornerRadius = getStartedButton.frame.size.height/2
         getStartedButton.layer.masksToBounds = true
         getStartedButton.tintColor = UIColor.mmWhiteIce
         
