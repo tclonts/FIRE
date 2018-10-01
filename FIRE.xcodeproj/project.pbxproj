@@ -15,9 +15,7 @@
 		BE0FA78020B6734600DBC191 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0FA77E20B6734600DBC191 /* LaunchScreen.storyboard */; };
 		BE16DB74212880C100A54259 /* Day.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE16DB73212880C100A54259 /* Day.gif */; };
 		BE16DB76212881CD00A54259 /* Graph.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE16DB75212881CD00A54259 /* Graph.gif */; };
-		BE16DB782128884700A54259 /* bullseye.png in Resources */ = {isa = PBXBuildFile; fileRef = BE16DB772128884700A54259 /* bullseye.png */; };
 		BE16DB7A21288ACE00A54259 /* Line.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE16DB7921288ACE00A54259 /* Line.gif */; };
-		BE16DB7C21288B6B00A54259 /* Compass.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE16DB7B21288B6B00A54259 /* Compass.gif */; };
 		BE16DB7E21288C2700A54259 /* Day-Night.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE16DB7D21288C2700A54259 /* Day-Night.gif */; };
 		BE16DB8021288CBD00A54259 /* Customize.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE16DB7F21288CBD00A54259 /* Customize.gif */; };
 		BE2DAF9C211632AE00525169 /* PurposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2DAF9B211632AE00525169 /* PurposeViewController.swift */; };
@@ -25,7 +23,6 @@
 		BE3A99772119E506006CF70B /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A99762119E506006CF70B /* AppUtility.swift */; };
 		BE55EC7921287A6A00FC6128 /* Rock.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE55EC7821287A6A00FC6128 /* Rock.gif */; };
 		BE6052FF2120CE4900D3AB3C /* GifImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6052FE2120CE4900D3AB3C /* GifImageHelper.swift */; };
-		BE60531321215AA100D3AB3C /* HourGlass.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE60531221215AA000D3AB3C /* HourGlass.gif */; };
 		BEC8A2BD20D96A6200608A9F /* SFCompactDisplay-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEC8A2A820D96A6200608A9F /* SFCompactDisplay-Heavy.otf */; };
 		BEC8A2BE20D96A6200608A9F /* SFCompactText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEC8A2A920D96A6200608A9F /* SFCompactText-Medium.otf */; };
 		BEC8A2BF20D96A6200608A9F /* SFCompactText-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEC8A2AA20D96A6200608A9F /* SFCompactText-SemiboldItalic.otf */; };
@@ -66,9 +63,7 @@
 		BE0FA78120B6734700DBC191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE16DB73212880C100A54259 /* Day.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Day.gif; sourceTree = "<group>"; };
 		BE16DB75212881CD00A54259 /* Graph.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Graph.gif; sourceTree = "<group>"; };
-		BE16DB772128884700A54259 /* bullseye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullseye.png; sourceTree = "<group>"; };
 		BE16DB7921288ACE00A54259 /* Line.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Line.gif; sourceTree = "<group>"; };
-		BE16DB7B21288B6B00A54259 /* Compass.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Compass.gif; path = ../../../../Desktop/Compass.gif; sourceTree = "<group>"; };
 		BE16DB7D21288C2700A54259 /* Day-Night.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Day-Night.gif"; sourceTree = "<group>"; };
 		BE16DB7F21288CBD00A54259 /* Customize.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Customize.gif; sourceTree = "<group>"; };
 		BE2DAF9B211632AE00525169 /* PurposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurposeViewController.swift; sourceTree = "<group>"; };
@@ -76,7 +71,6 @@
 		BE3A99762119E506006CF70B /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 		BE55EC7821287A6A00FC6128 /* Rock.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Rock.gif; sourceTree = "<group>"; };
 		BE6052FE2120CE4900D3AB3C /* GifImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImageHelper.swift; sourceTree = "<group>"; };
-		BE60531221215AA000D3AB3C /* HourGlass.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = HourGlass.gif; path = ../../../../Desktop/HourGlass.gif; sourceTree = "<group>"; };
 		BEC8A2A820D96A6200608A9F /* SFCompactDisplay-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Heavy.otf"; sourceTree = "<group>"; };
 		BEC8A2A920D96A6200608A9F /* SFCompactText-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-Medium.otf"; sourceTree = "<group>"; };
 		BEC8A2AA20D96A6200608A9F /* SFCompactText-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-SemiboldItalic.otf"; sourceTree = "<group>"; };
@@ -233,9 +227,6 @@
 				BE16DB75212881CD00A54259 /* Graph.gif */,
 				BE16DB7F21288CBD00A54259 /* Customize.gif */,
 				BE16DB7D21288C2700A54259 /* Day-Night.gif */,
-				BE16DB7B21288B6B00A54259 /* Compass.gif */,
-				BE60531221215AA000D3AB3C /* HourGlass.gif */,
-				BE16DB772128884700A54259 /* bullseye.png */,
 				BE55EC7821287A6A00FC6128 /* Rock.gif */,
 			);
 			path = ViewControllers;
@@ -334,7 +325,6 @@
 				BEC8A2C420D96A6200608A9F /* SFCompactDisplay-Medium.otf in Resources */,
 				BEC8A2CB20D96A6200608A9F /* SFCompactDisplay-Bold.otf in Resources */,
 				BEC8A2CA20D96A6200608A9F /* SFCompactText-Light.otf in Resources */,
-				BE16DB7C21288B6B00A54259 /* Compass.gif in Resources */,
 				BEC8A2CE20D96A6200608A9F /* SFCompactText-Heavy.otf in Resources */,
 				BEC8A2C020D96A6200608A9F /* SFCompactDisplay-Light.otf in Resources */,
 				BEC8A2D120D96A6200608A9F /* SFCompactDisplay-Thin.otf in Resources */,
@@ -348,9 +338,7 @@
 				BEC8A2C620D96A6200608A9F /* SFCompactDisplay-Regular.otf in Resources */,
 				BEC8A2C220D96A6200608A9F /* SFCompactText-BoldItalic.otf in Resources */,
 				BEC8A2C820D96A6200608A9F /* SFCompactText-Semibold.otf in Resources */,
-				BE60531321215AA100D3AB3C /* HourGlass.gif in Resources */,
 				BEC8A2BE20D96A6200608A9F /* SFCompactText-Medium.otf in Resources */,
-				BE16DB782128884700A54259 /* bullseye.png in Resources */,
 				BEC8A2C120D96A6200608A9F /* SFCompactText-Regular.otf in Resources */,
 				BE16DB7E21288C2700A54259 /* Day-Night.gif in Resources */,
 				BEC8A2BD20D96A6200608A9F /* SFCompactDisplay-Heavy.otf in Resources */,
