@@ -33,8 +33,8 @@ class FutureViewController: UIViewController {
         backArrowButton.tintColor = UIColor.mmTealBlue
         nextArrowButton.tintColor = UIColor.mmTealBlue
         
-        imageView.loadGif(name: "Rock")
-    }
+        let image = UIImage(named: "rocket")
+        imageView.image = image    }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()

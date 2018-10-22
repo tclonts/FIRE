@@ -33,8 +33,8 @@ class PurposeViewController: UIViewController {
         pageControl.pageIndicatorTintColor = UIColor.mmWhiteIce
         backArrowButton.tintColor = UIColor.mmTealBlue
         nextArrowButton.tintColor = UIColor.mmTealBlue
-        
-        imageView.loadGif(name: "Compass")
+        let image = UIImage(named: "goal")
+        imageView.image = image
     
     }
     

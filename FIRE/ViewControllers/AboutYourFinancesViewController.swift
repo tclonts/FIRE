@@ -22,7 +22,6 @@ class AboutYourFinancesViewController: UIViewController {
     @IBOutlet weak var calculateButton: UIButton!
     
     
-    @IBOutlet weak var yearOldInfoButton: UIButton!
     @IBOutlet weak var annualIncomeInfoButtom: UIButton!
     @IBOutlet weak var annualSavingsInfoButton: UIButton!
     @IBOutlet weak var yearlyExpensesInfoButton: UIButton!
@@ -96,44 +95,37 @@ class AboutYourFinancesViewController: UIViewController {
     
     // Info Button Alerts
     
-    @IBAction func yearsOldButtonTapped(_ sender: UIButton) {
-        
-        presentSimpleAlert(title: "Ok", message: "sadfsdfasdfasdfas")
 
-    }
     @IBAction func annualIncomeInfoButtonTapped(_ sender: UIButton) {
-        presentSimpleAlert(title: "Ok", message: "sadfsdfasdfasdfas")
+        presentSimpleAlert(title: "Annual Income", message: "This is your annual post-tax household income")
 
     }
     @IBAction func annualSavingsInfoButtonTapped(_ sender: UIButton) {
-        presentSimpleAlert(title: "Ok", message: "sadfsdfasdfasdfas")
+        presentSimpleAlert(title: "Annual Savings", message: "This is your total in annual income, minus your total annual expenses divided by annual income")
         
     }
     @IBAction func yearlyExpensesInfoButtonTapped(_ sender: UIButton) {
-        presentSimpleAlert(title: "Ok", message: "sadfsdfasdfasdfas")
+        presentSimpleAlert(title: "Annual Expenses", message: "This is your total annual expenses")
 
     }
     @IBAction func totalSavingsInfoButtonTapped(_ sender: UIButton) {
-        presentSimpleAlert(title: "Ok", message: "sadfsdfasdfasdfas")
+        presentSimpleAlert(title: "Total Savings", message: "What is your total in savings accounts and investments, sorry, home equity and vehicles don't count here")
     }
     @IBAction func withdrawalRateInfoButtonTapped(_ sender: UIButton) {
-        presentSimpleAlert(title: "Ok", message: "sadfsdfasdfasdfas")
+        presentSimpleAlert(title: "Withdrawal Rate", message: "4% is the standard withdrawal rate, so leave this out unless you want to be more conservative and move this down, maybe to 3-3.5%")
 
     }
     @IBAction func inflationRateInfoButtonTapped(_ sender: UIButton) {
-        presentSimpleAlert(title: "Ok", message: "sadfsdfasdfasdfas")
+        presentSimpleAlert(title: "Inflation Rate", message: "What do you think will be the average annual inflation rate in the future? 3% is usually a pretty good benchmark")
 
     }
     @IBAction func investmentReturnInfoButtonTapped(_ sender: UIButton) {
-        presentSimpleAlert(title: "Ok", message: "sadfsdfasdfasdfas")
+        presentSimpleAlert(title: "Return on Investment", message: "What do you think your average investment return will be in the future? 8% is a good safe estimate, but you could be more conservative or risky and change that")
 
     }
     
     
-    
-    
     func setupInfoButtonColor() {
-        yearOldInfoButton.tintColor = UIColor.mmWhiteIce
         annualIncomeInfoButtom.tintColor = UIColor.mmWhiteIce
         annualSavingsInfoButton.tintColor = UIColor.mmWhiteIce
         yearlyExpensesInfoButton.tintColor = UIColor.mmWhiteIce

@@ -36,8 +36,9 @@ class PowerViewController: UIViewController {
         pageControl.pageIndicatorTintColor = UIColor.mmWhiteIce
         backArrowButton.tintColor = UIColor.mmTealBlue
         nextArrowButton.tintColor = UIColor.mmTealBlue
-        
-        imageView.loadGif(name: "HourGlass")
+        let image = UIImage(named: "hourG")
+
+        imageView.image = image
         
     }
     
