@@ -128,7 +128,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power of Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9M-lI-Ogo">
                                         <rect key="frame" x="0.0" y="0.0" width="300.5" height="33.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -139,7 +139,7 @@
                                             <constraint firstAttribute="height" constant="200" id="Vge-d0-ooV"/>
                                         </constraints>
                                         <string key="text">When it comes to thinking about retirement, time literally equals money. You don't pay for your purchases with money, but rather minutes, hours, days, or even years of your life. Every time you save (and subsequently invest) for the future you're buying your freedom.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -239,7 +239,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Future Impact" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOt-p4-IyI">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="33.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -250,7 +250,7 @@
                                             <constraint firstAttribute="height" constant="200" id="duG-UF-8go"/>
                                         </constraints>
                                         <string key="text">Don't think about your purchases in terms of dollars today, but rather how they impact your future. What is the impact on your retirement if you cut cable? Get a 10% raise and save the full amount? Pull from your retirement account to get that new car?</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -334,7 +334,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purpose" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsN-d5-XlM">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="33.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -345,7 +345,7 @@
                                             <constraint firstAttribute="height" constant="200" id="ff0-f6-oSR"/>
                                         </constraints>
                                         <string key="text">The purpose of this app is to help you to clearly identify the direct correlation between spending and saving and when you'll be financially independent Our goal is that you spend money on things you value, rather than mindlessly spending without the full knowledge of the consequences.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -436,14 +436,14 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cjb-Og-ChB">
-                                        <rect key="frame" x="0.0" y="48.5" width="300" height="1"/>
+                                        <rect key="frame" x="0.0" y="53" width="300" height="1"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="WQr-vn-DxN"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PVa-2f-dOw">
-                                        <rect key="frame" x="0.0" y="64" width="300" height="30"/>
+                                        <rect key="frame" x="0.0" y="72.5" width="300" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccU-jn-jna" userLabel="AI">
                                                 <rect key="frame" x="0.0" y="0.0" width="35" height="30"/>
@@ -477,57 +477,15 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AtB-OP-HZC">
-                                        <rect key="frame" x="0.0" y="108.5" width="300" height="1"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="1" id="MtH-a2-toH"/>
-                                        </constraints>
-                                    </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="y5g-hk-z5J">
-                                        <rect key="frame" x="0.0" y="124.5" width="300" height="30"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gb-eG-wCt">
-                                                <rect key="frame" x="0.0" y="0.0" width="35" height="30"/>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="7q0-dF-zrN"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Annual Savings %" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ifw-qB-f0J">
-                                                <rect key="frame" x="43" y="0.0" width="219" height="30"/>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                                                        <color key="value" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXv-Bv-WSk">
-                                                <rect key="frame" x="270" y="0.0" width="30" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="30" id="96P-ha-45u"/>
-                                                </constraints>
-                                                <connections>
-                                                    <action selector="annualSavingsInfoButtonTapped:" destination="XST-jC-8UZ" eventType="touchUpInside" id="jij-Hh-gn6"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Egd-C7-U9J">
-                                        <rect key="frame" x="0.0" y="169" width="300" height="1"/>
+                                        <rect key="frame" x="0.0" y="121.5" width="300" height="1"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="q0N-Kx-iLc"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UQc-fI-3cx">
-                                        <rect key="frame" x="0.0" y="184.5" width="300" height="30"/>
+                                        <rect key="frame" x="0.0" y="141.5" width="300" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTk-TE-3J6">
                                                 <rect key="frame" x="0.0" y="0.0" width="35" height="30"/>
@@ -562,14 +520,14 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TOC-ZK-dv0">
-                                        <rect key="frame" x="0.0" y="229" width="300" height="1"/>
+                                        <rect key="frame" x="0.0" y="190.5" width="300" height="1"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="wm0-1x-JUG"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="i01-Su-ysK">
-                                        <rect key="frame" x="0.0" y="244.5" width="300" height="30"/>
+                                        <rect key="frame" x="0.0" y="210" width="300" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FaF-nu-scW">
                                                 <rect key="frame" x="0.0" y="0.0" width="35" height="30"/>
@@ -604,14 +562,14 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xdh-Ta-oP7">
-                                        <rect key="frame" x="0.0" y="289" width="300" height="1"/>
+                                        <rect key="frame" x="0.0" y="259" width="300" height="1"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="Xlr-4P-iVx"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DUE-hI-qLX">
-                                        <rect key="frame" x="0.0" y="304.5" width="300" height="30"/>
+                                        <rect key="frame" x="0.0" y="279" width="300" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAd-D2-Zsl">
                                                 <rect key="frame" x="0.0" y="0.0" width="35" height="30"/>
@@ -646,14 +604,14 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNr-uc-YCO">
-                                        <rect key="frame" x="0.0" y="349" width="300" height="1"/>
+                                        <rect key="frame" x="0.0" y="327.5" width="300" height="1"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="gxB-KH-DFL"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Bae-4F-gbN">
-                                        <rect key="frame" x="0.0" y="365" width="300" height="30"/>
+                                        <rect key="frame" x="0.0" y="347.5" width="300" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCF-hK-jCf">
                                                 <rect key="frame" x="0.0" y="0.0" width="35" height="30"/>
@@ -688,14 +646,14 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vEa-bU-oAx">
-                                        <rect key="frame" x="0.0" y="409.5" width="300" height="1"/>
+                                        <rect key="frame" x="0.0" y="396.5" width="300" height="1"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="VRh-CQ-33U"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="73s-Yy-rwF">
-                                        <rect key="frame" x="0.0" y="425" width="300" height="30"/>
+                                        <rect key="frame" x="0.0" y="416.5" width="300" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xko-pg-tAq">
                                                 <rect key="frame" x="0.0" y="0.0" width="35" height="30"/>
@@ -730,7 +688,7 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i3O-0f-cxl">
-                                        <rect key="frame" x="0.0" y="469.5" width="300" height="1"/>
+                                        <rect key="frame" x="0.0" y="465" width="300" height="1"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="2SZ-w4-i50"/>
@@ -769,8 +727,6 @@
                         <outlet property="ageTextField" destination="aPc-wG-z9C" id="o8Q-Jj-1mw"/>
                         <outlet property="annualIncomeInfoButtom" destination="3dg-1H-B27" id="bm9-0U-5Sn"/>
                         <outlet property="annualIncomeTextField" destination="11z-jw-u96" id="Fzk-dF-meA"/>
-                        <outlet property="annualSavingsInfoButton" destination="mXv-Bv-WSk" id="KSu-eE-JCW"/>
-                        <outlet property="annualSavingsRateTextField" destination="Ifw-qB-f0J" id="2gv-ug-nil"/>
                         <outlet property="calculateButton" destination="UMv-oN-YJo" id="TWt-nc-TJr"/>
                         <outlet property="inflationRateInfoButton" destination="wN0-u4-CKk" id="Afb-me-Qqh"/>
                         <outlet property="inflationRateTextField" destination="v19-dQ-k2Z" id="gb1-LY-EMM"/>
@@ -801,7 +757,7 @@
                                 <rect key="frame" x="16" y="64" width="343" height="579"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Based on these inputs, you are years away from financial Independence! You could reach finacial independence when you are years old</string>
-                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -872,8 +828,8 @@
         <image name="WebLink" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="pvX-5e-q7g"/>
+        <segue reference="Mb6-GX-g8p"/>
         <segue reference="5Eb-FZ-iGl"/>
-        <segue reference="swN-iM-NB9"/>
+        <segue reference="b4O-nc-Pa0"/>
     </inferredMetricsTieBreakers>
 </document>

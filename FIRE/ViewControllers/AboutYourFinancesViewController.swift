@@ -13,7 +13,6 @@ class AboutYourFinancesViewController: UIViewController {
 
     @IBOutlet weak var ageTextField: UITextField!
     @IBOutlet weak var annualIncomeTextField: UITextField!
-    @IBOutlet weak var annualSavingsRateTextField: UITextField!
     @IBOutlet weak var yearlyExpensesTextField: UITextField!
     @IBOutlet weak var totalSavingsTextField: UITextField!
     @IBOutlet weak var withdrawalRateTextField: UITextField!
@@ -23,7 +22,6 @@ class AboutYourFinancesViewController: UIViewController {
     
     
     @IBOutlet weak var annualIncomeInfoButtom: UIButton!
-    @IBOutlet weak var annualSavingsInfoButton: UIButton!
     @IBOutlet weak var yearlyExpensesInfoButton: UIButton!
     @IBOutlet weak var totalSavingsInfoButton: UIButton!
     @IBOutlet weak var withdrawalRateInfoButton: UIButton!
@@ -37,7 +35,6 @@ class AboutYourFinancesViewController: UIViewController {
         super.viewDidLoad()
         ageTextField.delegate = self
         annualIncomeTextField.delegate = self
-        annualSavingsRateTextField.delegate = self
         yearlyExpensesTextField.delegate = self
         totalSavingsTextField.delegate = self
         withdrawalRateTextField.delegate = self
@@ -48,8 +45,6 @@ class AboutYourFinancesViewController: UIViewController {
         ageTextField.textColor = UIColor.mmWhiteIce
         annualIncomeTextField.backgroundColor = UIColor.mmDarkGreen
         annualIncomeTextField.textColor = UIColor.mmWhiteIce
-        annualSavingsRateTextField.backgroundColor = UIColor.mmDarkGreen
-        annualSavingsRateTextField.textColor = UIColor.mmWhiteIce
         yearlyExpensesTextField.backgroundColor = UIColor.mmDarkGreen
         yearlyExpensesTextField.textColor = UIColor.mmWhiteIce
         totalSavingsTextField.backgroundColor = UIColor.mmDarkGreen
@@ -75,8 +70,8 @@ class AboutYourFinancesViewController: UIViewController {
         navigationItem.largeTitleDisplayMode = .always
         navigationItem.title = "FIRE Calculator"
 
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.mmWhiteIce]
-        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.mmWhiteIce]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.mmWhiteIce]
+        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.mmWhiteIce]
 
 
         if let navFrame = self.navigationController?.navigationBar.frame {
@@ -127,7 +122,6 @@ class AboutYourFinancesViewController: UIViewController {
     
     func setupInfoButtonColor() {
         annualIncomeInfoButtom.tintColor = UIColor.mmWhiteIce
-        annualSavingsInfoButton.tintColor = UIColor.mmWhiteIce
         yearlyExpensesInfoButton.tintColor = UIColor.mmWhiteIce
         totalSavingsInfoButton.tintColor = UIColor.mmWhiteIce
         withdrawalRateInfoButton.tintColor = UIColor.mmWhiteIce
@@ -150,7 +144,7 @@ class AboutYourFinancesViewController: UIViewController {
     var year = 0
     
     @IBAction func calculateButtonTapped(_ sender: UIButton) {
-        if (ageTextField.text?.isEmpty)! || (annualIncomeTextField.text?.isEmpty)! || (annualSavingsRateTextField.text?.isEmpty)! || (yearlyExpensesTextField.text?.isEmpty)! || (totalSavingsTextField.text?.isEmpty)! || (withdrawalRateTextField.text?.isEmpty)! || (inflationRateTextField.text?.isEmpty)! || (investmentReturnTextField.text?.isEmpty)! {
+        if (ageTextField.text?.isEmpty)! || (annualIncomeTextField.text?.isEmpty)! || (yearlyExpensesTextField.text?.isEmpty)! || (totalSavingsTextField.text?.isEmpty)! || (withdrawalRateTextField.text?.isEmpty)! || (inflationRateTextField.text?.isEmpty)! || (investmentReturnTextField.text?.isEmpty)! {
             //display alert message
             DispatchQueue.main.async {
                 self.presentSimpleAlert(title: "oops", message: "all textfields required")
@@ -169,11 +163,11 @@ class AboutYourFinancesViewController: UIViewController {
     func retirementCalculationFunction(completion: @escaping(_ success: Bool) -> Void) {
         guard var totalSavings = Int(totalSavingsTextField.text!) else { return }
         guard let annualIncome = Int(annualIncomeTextField.text!) else { return }
-        let annualSavingsRate = Double(annualSavingsRateTextField.text!)! / 100.0
-        let annualDollarsSaved = Int(Double(annualIncome) * (annualSavingsRate))
-        let yearlyExpenses = Int(yearlyExpensesTextField.text!)
+        guard let yearlyExpenses = Int(yearlyExpensesTextField.text!) else { return }
+        let annualSavingsRate = (annualIncome - yearlyExpenses) / annualIncome
+        let annualDollarsSaved = annualIncome * annualSavingsRate
         let withdrawalRate = 4.0 / 100.0
-        let financialIndependenceNumber = Int((Double(yearlyExpenses!)) / withdrawalRate)
+        let financialIndependenceNumber = Int((Double(yearlyExpenses)) / withdrawalRate)
         let portfolioPercentageRate = 8.0 / 100.0
         var year = 0
         
@@ -209,7 +203,7 @@ class AboutYourFinancesViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toResults" {
             let resultsVC = segue.destination as? ResultsViewController
-            let ageOfRetirement = self.ageOfRetirment
+            _ = self.ageOfRetirment
             resultsVC?.age = ageOfRetirment
             resultsVC?.year = year
         }
@@ -243,18 +237,7 @@ extension AboutYourFinancesViewController: UITextFieldDelegate {
             
             return newString.length <= maxLength && noLetters
         }
-        if textField == annualSavingsRateTextField {
-            let maxLength = 3
-            let currentString: NSString = textField.text! as NSString
-            let newString: NSString = currentString.replacingCharacters(in: range, with: string) as NSString
-            
-            let invalidCharacters = CharacterSet(charactersIn: "0123456789").inverted
-            let noLetters = string.rangeOfCharacter(from: invalidCharacters, options: [], range: string.startIndex ..< string.endIndex) == nil
-            
-            return newString.length <= maxLength && noLetters
-            
-            
-        }
+    
         if textField == yearlyExpensesTextField {
             let maxLength = 9
             let currentString: NSString = textField.text! as NSString
